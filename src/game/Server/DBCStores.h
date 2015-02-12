@@ -123,6 +123,7 @@ extern TaxiPathNodesByPath                       sTaxiPathNodesByPath;
 extern DBCStorage <WMOAreaTableEntry>            sWMOAreaTableStore;
 extern DBCStorage <WorldSafeLocsEntry>           sWorldSafeLocsStore;
 
+// 加载各种数据表，如区域数据表，飞行点数据表等，类似我们自己的ExceltableData
 void LoadDBCStores(const std::string& dataPath);
 
 // script support functions

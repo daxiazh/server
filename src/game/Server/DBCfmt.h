@@ -25,6 +25,7 @@
 #ifndef MANGOS_DBCSFRM_H
 #define MANGOS_DBCSFRM_H
 
+// 注：定义了.dbc文件中的列数及每一列的数据类型.见：enum FieldFormat 
 const char AreaTableEntryfmt[] = "niiiixxxxxissssssssxixxxi";
 const char AreaTriggerEntryfmt[] = "niffffffff";
 const char AuctionHouseEntryfmt[] = "niiixxxxxxxxx";

@@ -30,7 +30,7 @@
 template<class T>
 /**
  * @brief
- *
+ * 提供一个统一的二维表格数据的存储与访问，类似ExcelTable
  */
 class DBCStorage
 {
