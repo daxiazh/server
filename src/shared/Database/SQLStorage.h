@@ -256,7 +256,7 @@ class SQLStorageBase
 
 /**
  * @brief
- *
+ * 线性存储的数据库数据表，直接分配了一个数组，这要求主键id不可以太大,且最好连续，否则会浪费非常多的内存，但它的查找速度非常快，因为是数组下标访问，适合id段较小的数据表
  */
 class SQLStorage : public SQLStorageBase
 {
@@ -348,7 +348,7 @@ class SQLStorage : public SQLStorageBase
 
 /**
  * @brief
- *
+ * Hash表存储的数据库数据表，对主键id没有要求，但查找速度稍慢，适合id段比较分散的数据表
  */
 class SQLHashStorage : public SQLStorageBase
 {
@@ -444,7 +444,7 @@ class SQLHashStorage : public SQLStorageBase
 
 /**
  * @brief
- *
+ * multimap存储数据的数据表，允许重复的主键id
  */
 class SQLMultiStorage : public SQLStorageBase
 {
@@ -752,7 +752,7 @@ class SQLStorageLoaderBase
 
 /**
  * @brief
- *
+ * 
  */
 class SQLStorageLoader : public SQLStorageLoaderBase<SQLStorageLoader, SQLStorage>
 {
